@@ -1,0 +1,15 @@
+1. Last name starts with MY or contains SE
+2. Last name contains b followed by R or U
+3. Get the orders that are not shipped
+4. Start order times by order_id = 2 descending orders as per their total price
+5. Get the top 3 loyal customers
+6. Join order_items table with products
+7. In sql_invoicing join 3 tables payment, client, payment_methods and show name of the client and payment method
+8. Join product with order_items table and show product_id, product name, and quantity
+9. Get all rows with these columns – order_date, order_id, first_name, shipper, status
+10. Write a query from sql_invoicing to get date, client name, amount, payment method
+11. Get customer_id, first_name, points, type 0-1000 bronze, 2000-3000 silver and 3000> gold
+12. Last name ends with EY or ON
+13. Get the customers whose phone numbers ends with 9
+14. From order_items tables, get the items for the order number 6 where the total price >30
+15. Get the order placed in 2019.

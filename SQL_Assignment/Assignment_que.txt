@@ -1,6 +1,7 @@
 1. Last name starts with MY or contains SE
 2. Last name contains b followed by R or U
 3. Get the orders that are not shipped
+4. Return all the products name, unit price and new price as(unit_price *1.1)
 4. Start order times by order_id = 2 descending orders as per their total price
 5. Get the top 3 loyal customers
 6. Join order_items table with products
@@ -13,3 +14,6 @@
 13. Get the customers whose phone numbers ends with 9
 14. From order_items tables, get the items for the order number 6 where the total price >30
 15. Get the order placed in 2019.
+17. Return the product with quantity in stock equal to 49, 38, 72.
+18. Return the customers born between '1990-01-01' and '2000-1-1'.
+19. Find the products that have never been ordered.

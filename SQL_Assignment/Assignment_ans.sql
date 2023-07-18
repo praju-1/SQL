@@ -77,8 +77,34 @@ SELECT * FROM customers
 WHERE phone LIKE "%9";
 
 -- 15.	From order_items tables, get the items for the order number 6 where the total price >30
-SELECT order_id, product_id, quantity, unit_price, quantity * unit_price AS Total_price FROM order_items;
+SELECT order_id, product_id, quantity, unit_price, quantity * unit_price AS Total_price 
+FROM order_items;
 
  -- 16.	Get the order placed in 2019
+
  SELECT * FROM orders
  WHERE order_date >= "2019-01-01";
+
+ -- 17. Return the product with quantity in stock equal to 49, 38, 72.
+
+SELECT * FROM products
+WHERE quantity_in_stock IN (49,38, 72)
+
+-- 18 Return the customers born between '1990-01-01' and '2000-1-1'
+
+SELECT * FROM customers
+WHERE birth_date BETWEEN '1990-01-01' AND '2000-01-01';
+
+-- 19. Find the products that have never been ordered.
+
+SELECT * FROM products p
+WHERE NOT EXISTS (
+	SELECT product_id
+	FROM order_items
+	WHERE product_id = p.product_id
+);
+
+-- 20. Write a stored procedure call get_payments with two parameters
+--1. client_id = INT(4)
+--2. payment_method_id = TINYINT(1)(0-255)
+
